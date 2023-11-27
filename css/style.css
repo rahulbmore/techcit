@@ -574,6 +574,10 @@ body {
     margin: 0 20px;
 }
 
+.details-wrap h5{   
+    color:var(--primary);
+
+}
 
 /* responsive css */
 
@@ -608,7 +612,7 @@ body {
 @media (max-width: 991.98px) {
     .sticky-top.navbar-dark {
         position: relative;
-        background: var(--white)FFF;
+        background: var(--white);
     }
 
     .navbar-dark .navbar-nav .nav-link,
