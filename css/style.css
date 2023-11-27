@@ -5,7 +5,10 @@
     --light: #EEF9FF;
     --dark: #091E3E;
 }
-
+.container-fluid{
+    max-width: 1920px;
+    margin: 0 auto;
+}
 
 /*** Spinner ***/
 .spinner {
@@ -400,9 +403,10 @@ body{
 
 .gradient-bg .service-item{
  background-color: white;
- box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.2);
+ /* box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.2); */
  height: 400px;
  padding: 40px;
+ margin-bottom: 15px;
 }
 
 .services-gardient-bg .service-item{
@@ -424,6 +428,7 @@ body{
     background: rgb(253,190,235);
     background: linear-gradient(90deg, rgba(253,190,235,1) 26%, rgba(253,230,204,1) 100%);
     border-radius: 100%;
+    padding: 15px;
 }
 .gradient-bg .service-item .service-icon img{
     width: 30px;
@@ -451,7 +456,7 @@ body{
     height: 350px;
     padding: 35px 25px;
     border:2px solid #ffffff;
-
+    transition: all .5s;
 }
 .service-item h5{
     color:#373737;
@@ -758,7 +763,10 @@ body{
    .lines{
     display: none;
    }
-   .gradient-bg, .services-gardient-bg{
+   .gradient-bg{
+        height:700px;    
+    }
+    .services-gardient-bg{
         height:auto;    
     }
     .our-features .row{
@@ -771,7 +779,7 @@ body{
 }
 .wave {
     position: absolute;
-    bottom: -2px;
+    bottom: -54px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -853,6 +861,7 @@ body{
     color: white;
     font-size: 22px;
     border-radius: 2px;
+    padding:21px 45px;
 }
 
 .title{
@@ -884,3 +893,20 @@ body{
     transition: none;
     transform: translateY(0px);
 }
+
+.slider{
+   background:transparent;
+}
+.slider .item {
+    /* height: 250px;
+    width: 100%;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #bbb; */
+    margin: 0 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .featuresTwo {
+        margin-left: 350px;
+    }
+  }

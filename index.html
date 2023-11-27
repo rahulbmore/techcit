@@ -25,12 +25,19 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -44,49 +51,50 @@
 
     <!-- Navbar & Banner Start -->
     <section class="navbar-banner-wrapper">
+        <!-- banner start -->
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <img src="./img/tchit_logo.png" alt="TechoCit" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav  py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">Features</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <a href="service.html" class="nav-item nav-link">Techonologies</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact us</a>
+                </div>
+
+            </div>
+        </nav>
+        <!-- banner start -->
         <div class="container-fluid position-relative p-0 bg-img">
-            <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-                <a href="index.html" class="navbar-brand p-0">
-                    <img src="./img/tchit_logo.png" alt="TechoCit" class="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav  py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">Features</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="service.html" class="nav-item nav-link">Techonologies</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact us</a>
+        <!-- banner start-->
+        <div class="banner overflow-hidden hv-100">
+            <div class="lines">
+                <img src="./img/mask_lines.svg" alt="Img">
+            </div>
+            <div class="">
+                <img class="w-100 banner-img" src="img/carousel-1.jpg" alt="Image">
+                <div class="banner-text d-flex flex-column align-items-start justify-content-center">
+                    <div class="ms-5 text-area" style="max-width: 900px;">
+                        <h1 class="display-1 text-white animated zoomIn fw-bold">FinTech software Development with</h1>
+                        <h1 class="display-1 grad-text text-white mb-md-4 animated zoomIn fw-bold">.docode Team</h1>
+                        <a href="quote.html"
+                            class="custom-btn text-decoration-none fw-bold me-3 animated slideInLeft">Contact
+                            Us</a>
                     </div>
-
-                </div>
-            </nav>
-
-            <!-- banner start-->
-            <div class="banner">
-                <div class="lines">
-                    <img src="./img/mask_lines.svg" alt="Img">
-                </div>
-                <div class="">
-                    <img class="w-100 banner-img" src="img/carousel-1.jpg" alt="Image">
-                    <div class="banner-text d-flex flex-column align-items-start justify-content-center">
-                        <div class="ms-5 text-area" style="max-width: 900px;">
-                            <h1 class="display-1 text-white animated zoomIn fw-bold">FinTech software Development with</h1>
-                            <h1 class="display-1 grad-text text-white mb-md-4 animated zoomIn fw-bold">.docode Team</h1>
-                            <a href="quote.html"
-                                class="custom-btn text-decoration-none fw-bold py-md-4 px-md-5 me-3 animated slideInLeft">Contact
-                                Us</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="wave">
-                    <img src="./img/Vector.svg" alt="Img">
                 </div>
             </div>
-            <!-- banner end -->
+            <div class="wave">
+                <img src="./img/Vector.svg" alt="Img">
+            </div>
+        </div>
+        <!-- banner end -->
         </div>
     </section>
     <!-- Navbar & Carousel End -->
@@ -526,31 +534,27 @@
 
     <!-- OUR FEATURES Start -->
     <section class="our-features">
-        <div class="container-fluid mb-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="gradient-bg">
-                <div class="container py-5">
-                    <div class="section-title text-center position-relative pb-1 mx-auto">
-                        <h1 class="fw-bold text-white text-start">Our Features</h1>
-                    </div>
-                    <p class="text-start text-white mb-5 ms-5 pl-5">Custom IT Solutions for Your Successful Business</p>
-                    <div class="row g-5 mb-5 pb-5  d-flex">
-                        <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                            <!-- offset-md-2  flex-nowrap-->
-
-                            <div
-                                class="service-item rounded d-flex flex-column align-items-start justify-content-center text-start">
-                                <img src="./img/mask_group.svg" class="mask-img" alt="Img">
-                                <div class="service-icon">
-                                    <img src="./img/orion_message.svg" alt="Img">
+        <!-- <div class="gradient-bg">
+            <div class="featuresTwo ">
+                <div class="container-fluid ">
+                    <div class="slider">
+                        <div class="item">
+                            <div class="">
+                                <div
+                                    class="service-item rounded d-flex flex-column align-items-start justify-content-center text-start">
+                                    <img src="./img/mask_group.svg" class="mask-img" alt="Img">
+                                    <div class="service-icon">
+                                        <img src="./img/orion_message.svg" alt="Img">
+                                    </div>
+                                    <h5 class="mb-3 fw-bold ">Custom Fintech Application</h5>
+                                    <p class="mb-5">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+                                    <a class="w-100 text-end " href="">Read More
+                                        <i class="bi bi-arrow-right text-primary"></i>
+                                    </a>
                                 </div>
-                                <h5 class="mb-3 fw-bold ">Custom Fintech Application</h5>
-                                <p class="mb-5">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                                <a class="w-100 text-end " href="">Read More
-                                    <i class="bi bi-arrow-right text-primary"></i>
-                                </a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="item"> <div>
                             <div
                                 class="service-item  rounded d-flex flex-column align-items-start justify-content-center text-start">
                                 <img src="./img/mask_group.svg" class="mask-img" alt="Img">
@@ -565,8 +569,8 @@
                                     <i class="bi bi-arrow-right text-primary"></i>
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                        </div></div>
+                        <div class="item"><div >
                             <div
                                 class="service-item  rounded d-flex flex-column align-items-start justify-content-center text-start">
                                 <img src="./img/mask_group.svg" class="mask-img" alt="Img">
@@ -581,8 +585,9 @@
                                     <i class="bi bi-arrow-right text-primary"></i>
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        </div></div>
+                        <div class="item">
+                            <div >
                             <div
                                 class="service-item rounded d-flex flex-column align-items-start justify-content-center text-start">
                                 <img src="./img/mask_group.svg" class="mask-img" alt="Img">
@@ -597,11 +602,121 @@
                                     <i class="bi bi-arrow-right text-primary"></i>
                                 </a>
                             </div>
-                        </div>
-
+                        </div></div>
+                        <div class="item">your content</div>
+                        <div class="item">your content</div>
                     </div>
                 </div>
+            </div>
+        </div> -->
+        <div class="container-fluid mb-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="gradient-bg">
+                <div class="container py-5">
+                    <div class="section-title text-center position-relative pb-1 mx-auto">
+                        <h1 class="fw-bold text-white text-start">Our Features</h1>
+                    </div>
+                    <p class="text-start text-white mb-5 ms-5 pl-5">Custom IT Solutions for Your Successful Business</p>
+                    
+                </div>
 
+                <div class="featuresTwo">
+                    <div class="slider">
+                            <div class="item">
+                        <div
+                            class="service-item rounded d-flex flex-column align-items-start justify-content-center text-start">
+                            <img src="./img/mask_group.svg" class="mask-img" alt="Img">
+                            <div class="service-icon">
+                                <img src="./img/orion_message.svg" alt="Img">
+                            </div>
+                            <h5 class="mb-3 fw-bold ">Custom Fintech Application</h5>
+                            <p class="mb-5">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+                            <a class="w-100 text-end " href="">Read More
+                                <i class="bi bi-arrow-right text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" data-wow-delay="0.6s">
+                        <div
+                            class="service-item  rounded d-flex flex-column align-items-start justify-content-center text-start">
+                            <img src="./img/mask_group.svg" class="mask-img" alt="Img">
+                            <div class="custom-icon">
+                                <img src="./img/group_female.svg" alt="Img">
+                            </div>
+                            <h5 class="mb-3 fw-bold">On-boarding & AML/KYC</h5>
+                            <p class="mb-5">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore
+                                sed
+                            </p>
+                            <a class="w-100 text-end " href="">Read More
+                                <i class="bi bi-arrow-right text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" data-wow-delay="0.9s">
+                        <div
+                            class="service-item  rounded d-flex flex-column align-items-start justify-content-center text-start">
+                            <img src="./img/mask_group.svg" class="mask-img" alt="Img">
+                            <div class="service-icon">
+                                <img src="./img/group_aml.svg" alt="Img">
+                            </div>
+                            <h5 class="mb-3 fw-bold">On-boarding & AML/KYC</h5>
+                            <p class="mb-5 ">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore
+                                sed
+                            </p>
+                            <a class="w-100 text-end " href="">Read More
+                                <i class="bi bi-arrow-right text-primary"></i>
+                            </a>
+                        </div>      
+                    </div>
+                    <div class="item" data-wow-delay="0.3s">
+                        <div
+                            class="service-item rounded d-flex flex-column align-items-start justify-content-center text-start">
+                            <img src="./img/mask_group.svg" class="mask-img" alt="Img">
+                            <div class="service-icon">
+                                <img src="./img/group_data_analytics.svg" alt="Img">
+                            </div>
+                            <h5 class="mb-3 fw-bold">Data Analytics</h5>
+                            <p class="mb-5">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore
+                                sed
+                            </p>
+                            <a class="w-100 text-end " href="">Read More
+                                <i class="bi bi-arrow-right text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" data-wow-delay="0.3s">
+                        <div
+                            class="service-item rounded d-flex flex-column align-items-start justify-content-center text-start">
+                            <img src="./img/mask_group.svg" class="mask-img" alt="Img">
+                            <div class="service-icon">
+                                <img src="./img/group_data_analytics.svg" alt="Img">
+                            </div>
+                            <h5 class="mb-3 fw-bold">Data Analytics</h5>
+                            <p class="mb-5">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore
+                                sed
+                            </p>
+                            <a class="w-100 text-end " href="">Read More
+                                <i class="bi bi-arrow-right text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" data-wow-delay="0.3s">
+                        <div
+                            class="service-item rounded d-flex flex-column align-items-start justify-content-center text-start">
+                            <img src="./img/mask_group.svg" class="mask-img" alt="Img">
+                            <div class="service-icon">
+                                <img src="./img/group_data_analytics.svg" alt="Img">
+                            </div>
+                            <h5 class="mb-3 fw-bold">Data Analytics</h5>
+                            <p class="mb-5">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore
+                                sed
+                            </p>
+                            <a class="w-100 text-end " href="">Read More
+                                <i class="bi bi-arrow-right text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -1172,11 +1287,9 @@
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Template Javascript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+   
 
 
     <script>
@@ -1202,6 +1315,55 @@
             output.innerHTML = e.target.value;
             updateGradient(e.target.value);
         });
+
+        $('.slider').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            dots: false,
+            centerPadding: '60px',
+            arrows: false,
+            responsive: [
+            {
+                breakpoint: 1600,
+                settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                breakpoint: 1250,
+                settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                breakpoint: 768,
+                settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+                }
+            ]
+            });
     </script>
 
 </body>
